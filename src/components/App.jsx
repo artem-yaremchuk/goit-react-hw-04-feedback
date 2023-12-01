@@ -11,9 +11,9 @@ const App = () => {
   const [bad, setBad] = useState(0);
 
   const handleFeedback = (type) => {
-    if (type === "good") setGood((prev) => prev + 1);
-    else if (type === "neutral") setNeutral((prev) => prev + 1);
-    else setBad((prev) => prev + 1);
+    if (type === "good") setGood(good + 1);
+    else if (type === "neutral") setNeutral(neutral + 1);
+    else setBad(bad + 1);
   };
 
   const countTotalFeedback = () => {
